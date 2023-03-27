@@ -19,4 +19,16 @@ class OhceTest extends TestCase
 
         $this->assertEquals("aloh", $echosWord);
     }
+
+    /**
+     * @test
+     */
+    public function returnLikesWordPalindrome(): void
+    {
+        $ohce = new Ohce();
+
+        $echosWord = $ohce->echo("oto");
+
+        $this->assertEquals("oto ¡Bonita palabra!", $echosWord);
+    }
 }
